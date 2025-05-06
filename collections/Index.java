@@ -95,20 +95,76 @@ import java.util.Arrays;
 
 
 
+// public class Index {
+//     public static void main(String[] args) {
+//         List<Integer> nums = Arrays.asList(1,2,5,7);
+//         System.out.println(nums);
+
+//         int sum = 0;
+//         for(int n : nums){
+//             if(n%2 == 0){
+//                 n = n*2;
+//                 sum += n;
+//             }
+//         }
+//         System.out.println(sum);
+
+//         nums.forEach(items -> System.out.println(items));
+//     }
+// }
+
+
+class Emp{
+    private String name;
+    private int salary;
+
+    public Emp(String name, int salary) {
+        this.name = name;
+        this.salary = salary;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Emp{name=" + name + ", salary=" + salary + "}";
+    }
+
+    
+}
+
+
+// Interview Question
 public class Index {
     public static void main(String[] args) {
-        List<Integer> nums = Arrays.asList(1,2,5,7);
-        System.out.println(nums);
+    //    ArrayList<Integer> marks = new ArrayList<>();
+    //    marks.add(10);
+    //    marks.add(40);
+    //    marks.add(30);
+    //    System.out.println(marks);
+    //    System.out.println(marks.getClass() + "class");
+    //    Collections.sort(marks);
+    //    System.out.println(marks + "sorted array");
 
-        int sum = 0;
-        for(int n : nums){
-            if(n%2 == 0){
-                n = n*2;
-                sum += n;
-            }
-        }
-        System.out.println(sum);
-
-        nums.forEach(items -> System.out.println(items));
+    ArrayList<Emp> emps = new ArrayList<>();
+    emps.add(new Emp( "Raj", 1000));
+    emps.add(new Emp("Shyam",50));
+    System.out.println(emps);
+    Collections.sort(emps);
+       
     }
 }
