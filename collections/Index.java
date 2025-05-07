@@ -114,9 +114,16 @@ import java.util.Arrays;
 // }
 
 
-class Emp{
+class Emp implements Comparable<Emp> {
     private String name;
     private int salary;
+
+    @Override
+    public int compareTo(Emp emp) {
+        System.out.println(emp + "emp compare");
+        return this.salary - emp.salary;
+    }
+
 
     public Emp(String name, int salary) {
         this.name = name;
@@ -163,8 +170,9 @@ public class Index {
     ArrayList<Emp> emps = new ArrayList<>();
     emps.add(new Emp( "Raj", 1000));
     emps.add(new Emp("Shyam",50));
-    System.out.println(emps);
+    System.out.println(emps + "before sort");
     Collections.sort(emps);
+    System.out.println(emps + "after sort");
        
     }
 }
