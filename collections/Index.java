@@ -170,6 +170,7 @@ public class Index {
     ArrayList<Emp> emps = new ArrayList<>();
     emps.add(new Emp( "Raj", 1000));
     emps.add(new Emp("Shyam",50));
+    emps.add(new Emp("Shyam",2000));
     System.out.println(emps + "before sort");
     Collections.sort(emps);
     System.out.println(emps + "after sort");
