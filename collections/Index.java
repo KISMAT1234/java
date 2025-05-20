@@ -62,7 +62,7 @@ import java.util.Arrays;
         // students.put("social", 80);
         // students.put("social", 90);
 
-        // System.out.println(students + "students");
+        // System.out.println(students + "studen                    ts");
         // System.out.println(students.get("social"))
 
 //     }
